@@ -23,10 +23,10 @@ const App = () => {
     }
     getMovies();
   }, []);
-
-  const addToSavedList = movie => {
-    setSavedList([...savedList, movie]);
-  };
+  
+  // const addToSavedList = movie => {
+  //   setSavedList([...savedList, movie]);
+  // };
 
   return (
     <div>
@@ -34,7 +34,7 @@ const App = () => {
       <SavedList list={savedList} />
       <Switch>
         <Route path ="/movies/:id">
-      <Movie />
+      <Movie  />
         </Route>
       <Route path="/">
       <MovieList movies={movieList} />

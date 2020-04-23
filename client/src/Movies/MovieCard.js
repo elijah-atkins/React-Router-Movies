@@ -5,7 +5,7 @@ const MovieCard = props => {
   const movie = props.movie;
 
   return (
-    <Link to={`/movies/${movie.id}`}>
+    <Link to={`/movies/${movie.id}`} className="link">
     <div className="movie-card">
       <h2>{movie.title}</h2>
       <div className="movie-director">
